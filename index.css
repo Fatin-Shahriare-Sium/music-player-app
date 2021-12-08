@@ -1,0 +1,34 @@
+.music-container__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+}
+.music-box{
+    display: flex;
+    align-items: center;
+    background-color: rgb(106, 202, 154);
+
+}
+.music-box__img{
+ 
+}
+.music-box__img img{
+    width: 50%;
+    object-fit: contain;
+    clip-path: circle();
+    transform: rotate(0deg);
+    animation: rotateImg 3s infinite;
+}
+
+.music-box__controller--btn{
+    display: flex;
+    gap: 3rem;
+}
+
+@keyframes rotateImg{
+    to{
+        transform: rotate(360deg);
+    }
+}
