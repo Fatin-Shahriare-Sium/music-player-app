@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <meta charset="UTF-8">
@@ -12,20 +13,23 @@
 </head>
 
 <body>
+    <pre id='log'>
+
+    </pre>
     <div class="music-container__wrapper">
         <div class="music-container">
-            <p>Title</p>
+            <p class="titlex">Surah Fatiha</p>
             <div class="music-box">
                 <audio id="audio"
-                    src="https://media.blubrry.com/muslim_central_quran/podcasts.qurancentral.com/abdel-kawi-abdul-majid/067.mp3"></audio>
+                    src="https://media.blubrry.com/muslim_central_quran/podcasts.qurancentral.com/abdel-kawi-abdul-majid/001.mp3"></audio>
                 <div class="music-box__img">
                     <img src="./img/mulk.jpg" alt="">
                 </div>
                 <div class="music-box__controller">
-                    <input class="progressbar" min="0" max="100" type="range">
+                    <input id='progressbar' class="progressbar" min="0" max="100" type="range">
                     <div class="music-box__controller--btn">
                         <i id="pre-btn" class="fa fa-backward"></i>
-                        <i id="play-btn" class="fa fa-pause"></i>
+                        <i id="play-btn" class="fa fa-play"></i>
                         <i id='next-btn' class="fa fa-forward"></i>
                     </div>
                 </div>
@@ -33,6 +37,8 @@
         </div>
     </div>
 </body>
+<script src="//cdn.jsdelivr.net/npm/eruda"></script>
+<script>eruda.init();</script>
 <script src="./app.js"></script>
 
 </html>

@@ -5,21 +5,22 @@
     height: 100vh;
     padding: 1rem;
 }
+.play .music-box__img img{
+    animation-play-state: running!important;
+}
 .music-box{
     display: flex;
     align-items: center;
     background-color: rgb(106, 202, 154);
 
 }
-.music-box__img{
- 
-}
+
 .music-box__img img{
     width: 50%;
     object-fit: contain;
     clip-path: circle();
-    transform: rotate(0deg);
-    animation: rotateImg 3s infinite;
+    animation: rotateImg 3s linear infinite;
+    animation-play-state: paused;
 }
 
 .music-box__controller--btn{
@@ -28,6 +29,9 @@
 }
 
 @keyframes rotateImg{
+    from{
+        transform: rotate(0deg);
+    }
     to{
         transform: rotate(360deg);
     }
