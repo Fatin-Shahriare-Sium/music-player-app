@@ -23,10 +23,15 @@
                 <audio id="audio"
                     src="https://media.blubrry.com/muslim_central_quran/podcasts.qurancentral.com/abdel-kawi-abdul-majid/001.mp3"></audio>
                 <div class="music-box__img">
-                    <img src="./img/mulk.jpg" alt="">
+                    <img id='audio-img' src="./img/mulk.jpg" alt="">
                 </div>
                 <div class="music-box__controller">
-                    <input id='progressbar' class="progressbar" min="0" max="100" type="range">
+                    <input id='progressbar' class="progressbar" min="0" max="100" value='0' type="range">
+                    <div class="music-timeline">
+                        <p id='music-currentTime'>0:00</p>
+                        <p id='music-durationTime'>0:00</p>
+                    </div>
+
                     <div class="music-box__controller--btn">
                         <i id="pre-btn" class="fa fa-backward"></i>
                         <i id="play-btn" class="fa fa-play"></i>
